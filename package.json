@@ -1,5 +1,5 @@
 {
-  "name": "squacker.js",
+  "name": "crapcord",
   "version": "1.0.6",
   "description": "A small library for making discord bots, using the gateway unlike discord-easy-slash (my last library)",
   "main": "package.js",

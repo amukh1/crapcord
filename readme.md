@@ -1,6 +1,6 @@
-[![npm version](https://badge.fury.io/js/squacker.js.svg)](https://www.npmjs.com/package/squacker.js)
+[![npm version](https://badge.fury.io/js/crapcord.svg)](https://www.npmjs.com/package/crapcord)
 
-# squacker.js
+# crapcord
 
 > A small library for making discord bots, using the gateway *unlike* discord-easy-slash *(my last library)*
 
@@ -30,13 +30,13 @@ v8.16.0
 To install and set up the library, run:
 
 ```sh
-$ npm install squacker.js
+$ npm install crapcord
 ```
 
 Or if you prefer using Yarn:
 
 ```sh
-$ yarn add --dev squacker.js
+$ yarn add --dev crapcord
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ $ yarn add --dev squacker.js
 ### First, Start by importing the library
 
 ```js
-var client = require('squacker.js');
+var client = require('crapcord');
 ```
 <br>
 ### Then, log in with your token, intents, and presence.
@@ -152,7 +152,7 @@ You can contribute to the project by making a pull request on [GitHub](https://g
 
 * **Amukh1** - [Github](https://github.com/amukh1)
 
-See also the list of [contributors](https://github.com/amukh1/squacker.js/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/amukh1/crapcord/contributors) who participated in this project.
 
 ## License
 

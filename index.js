@@ -1,4 +1,4 @@
-const client = require('./package.js'); // or require('squacker.js')
+const client = require('./package.js'); // or require('crapcord')
 
 
 client.on('READY', ()=>{
