@@ -52,8 +52,8 @@ var client = require('squacker.js');
 ```js
 client.login('TOKEN', 513, {
     name: "Froggy",
-    type: 3
-  });
+    type: client.activityTypes["Playing"],
+});
   ```
   <br>
 
@@ -122,7 +122,7 @@ client.reply(message, embeds, components)
 ```js
 client.login('TOKEN', 513, {
     name: "Froggy",
-    type: 3
+    type: client.activityTypes["Playing"],
   });
 ```
 

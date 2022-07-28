@@ -27,5 +27,5 @@ client.on('MESSAGE_CREATE', (msg)=>{
 
 client.login('TOKEN', 513, {
     name: "Froggy",
-    type: 3
+    type: client.activityTypes["Playing"],
   });

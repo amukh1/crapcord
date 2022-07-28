@@ -306,7 +306,15 @@ console.log('INTERACTION_CREATE')
     on: function(event, callback) {
         const events = require('./events.js')
         pkg[event] = callback
-    }
+    },
+    activityTypes: {
+        "Playing": 0,
+        "Streaming": 1,
+        "Listening": 2,
+        "Watching": 3,
+        "Custom": 4,
+        "Competing": 5,
+    },
 }
 
 module.exports = pkg
