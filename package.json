@@ -1,0 +1,16 @@
+{
+  "name": "squacker.js",
+  "version": "1.0.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amukh1",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.2.9",
+    "request": "^2.88.2",
+    "ws": "^8.8.1"
+  }
+}
