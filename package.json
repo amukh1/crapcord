@@ -1,7 +1,7 @@
 {
   "name": "squacker.js",
-  "version": "1.0.4",
-  "description": "",
+  "version": "1.0.5",
+  "description": "A small library for making discord bots, using the gateway unlike discord-easy-slash (my last library)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
