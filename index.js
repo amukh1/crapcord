@@ -25,7 +25,7 @@ client.on('MESSAGE_CREATE', (msg)=>{
 })
 
 
-client.login('OTMzMDgxNTQ2MTg3OTk3MjY1.GPhnab.d5rwi-VEe5bzpJMD-VDUUmzKui8t0Ght1DrBzc', 513, {
+client.login('TOKEN', 513, {
     name: "Froggy",
     type: 3
   });
