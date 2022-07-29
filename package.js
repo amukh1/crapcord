@@ -34,7 +34,9 @@ ws.on('message', function incoming(data) {
             let URL = `https://discord.com/api/v9/interactions/${d.id}/${d.token}/callback`;
              pkg["INTERACTION_CREATE"](d)
 }else if(typeof(t) == "string"){
+    if(pkg[t]){
     pkg[t](d)
+    }
 }
         
 
@@ -70,120 +72,6 @@ let pkg = {
         }))
     })
    },
-   ["INTERACTION_CREATE"]: (d)=>{
-console.log('INTERACTION_CREATE')
-   },
-    ["MESSAGE_CREATE"]: (d)=>{
-        console.log('MESSAGE_CREATE')
-    },
-    ["READY"]: (d)=>{
-        console.log('READY')
-    },
-    ['CHANNEL_CREATE']: (d)=>{
-        console.log('CHANNEL_CREATE')
-    },
-    ['CHANNEL_UPDATE']: (d)=>{
-        console.log('CHANNEL_UPDATE')
-    },
-    ['CHANNEL_DELETE']: (d)=>{
-        console.log('CHANNEL_DELETE')
-    },
-    ['CHANNEL_PINS_UPDATE']: (d)=>{
-        console.log('CHANNEL_PINS_UPDATE')
-    },
-    ["GUILD_CREATE"]: (d)=>{
-        console.log('GUILD_CREATE')
-    },
-    ["GUILD_MEMBER_ADD"]: (d)=>{
-        console.log('GUILD_MEMBER_ADD')
-    },
-    ["GUILD_MEMBER_REMOVE"]: (d)=>{
-        console.log('GUILD_MEMBER_REMOVE')
-    },
-    ["GUILD_MEMBER_UPDATE"]: (d)=>{
-        console.log('GUILD_MEMBER_UPDATE')
-    },
-    ["GUILD_MEMBERS_CHUNK"]: (d)=>{
-        console.log('GUILD_MEMBERS_CHUNK')
-    },
-    ["GUILD_UPDATE"]: (d)=>{
-        console.log('GUILD_UPDATE')
-    },
-    ["GUILD_DELETE"]: (d)=>{
-        console.log('GUILD_DELETE')
-    },
-    ["GUILD_BAN_ADD"]: (d)=>{
-        console.log('GUILD_BAN_ADD')
-    },
-    ["GUILD_BAN_REMOVE"]: (d)=>{
-        console.log('GUILD_BAN_REMOVE')
-    },
-    ["GUILD_EMOJIS_UPDATE"]: (d)=>{
-        console.log('GUILD_EMOJIS_UPDATE')
-    },
-    ["GUILD_INTEGRATIONS_UPDATE"]: (d)=>{
-        console.log('GUILD_INTEGRATIONS_UPDATE')
-    },
-    ["GUILD_ROLE_CREATE"]: (d)=>{
-        console.log('GUILD_ROLE_CREATE')
-    },
-    ["GUILD_ROLE_UPDATE"]: (d)=>{
-        console.log('GUILD_ROLE_UPDATE')
-    },
-    ["GUILD_ROLE_DELETE"]: (d)=>{
-        console.log('GUILD_ROLE_DELETE')
-    },
-    ["GUILD_SYNC"]: (d)=>{
-        console.log('GUILD_SYNC')
-    },
-    ["GUILD_MEMBERS_CHUNK"]: (d)=>{
-        console.log('GUILD_MEMBERS_CHUNK')
-    },
-    ["GUILD_MESSAGE_DELETE"]: (d)=>{
-        console.log('GUILD_MESSAGE_DELETE')
-    },
-    ["GUILD_MESSAGE_BULK_DELETE"]: (d)=>{
-        console.log('GUILD_MESSAGE_BULK_DELETE')
-    },
-    ["GUILD_MESSAGE_UPDATE"]: (d)=>{
-        console.log('GUILD_MESSAGE_UPDATE')
-    },
-    ["GUILD_MESSAGE_DELETE_BULK"]: (d)=>{
-        console.log('GUILD_MESSAGE_DELETE_BULK')
-    },
-    ["GUILD_MESSAGE_REACTION_ADD"]: (d)=>{
-        console.log('GUILD_MESSAGE_REACTION_ADD')
-    },
-    ["GUILD_MESSAGE_REACTION_REMOVE"]: (d)=>{
-        console.log('GUILD_MESSAGE_REACTION_REMOVE')
-    },
-    ["GUILD_MESSAGE_REACTION_REMOVE_ALL"]: (d)=>{
-        console.log('GUILD_MESSAGE_REACTION_REMOVE_ALL')
-    },
-    ["GUILD_MESSAGE_REACTION_REMOVE_EMOJI"]: (d)=>{
-        console.log('GUILD_MESSAGE_REACTION_REMOVE_EMOJI')
-    },
-    ["GUILD_INTEGRATIONS_UPDATE"]: (d)=>{
-        console.log('GUILD_INTEGRATIONS_UPDATE')
-    },
-    ["GUILD_WEBHOOKS_UPDATE"]: (d)=>{
-        console.log('GUILD_WEBHOOKS_UPDATE')
-    },
-    ["GUILD_INVITE_CREATE"]: (d)=>{
-        console.log('GUILD_INVITE_CREATE')
-    },
-    ["GUILD_INVITE_DELETE"]: (d)=>{
-        console.log('GUILD_INVITE_DELETE')
-    },
-    ["GUILD_BAN_ADD"]: (d)=>{
-        console.log('GUILD_BAN_ADD')
-    },
-    ["GUILD_BAN_REMOVE"]: (d)=>{
-        console.log('GUILD_BAN_REMOVE')
-    },
-    ["GUILD_EMOJIS_UPDATE"]: (d)=>{
-        console.log('GUILD_EMOJIS_UPDATE')
-    },
     INTERACTION: class {
         constructor(d) {
             this.data = d

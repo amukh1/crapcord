@@ -1,4 +1,4 @@
-const types = {
+let types = {
     "Playing": 0,
     "Streaming": 1,
     "Listening": 2,
